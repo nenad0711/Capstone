@@ -2,7 +2,7 @@
 <div id= "app">
   <router-link to = '/'>Home</router-link>
   <router-link to = '/register'>Register</router-link>
-<h1> Welcome to Baby Tracker </h1>
+
 </div>
 <router-view/>
 
