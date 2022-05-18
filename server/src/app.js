@@ -8,11 +8,12 @@ app.use(bodyParser.json()) // app.use to implement module
 app.use(morgan('combined')) // app.use to implement module
 app.use(bodyParser.json()) // app.use to implement module
 app.use(cors())  // app.use to implement module
+
 app.post('/register',(req,res) =>{  // test you app with simple 
   
   res.send({
   
-    message:`your email is ${req.body.email}! hahaha and your password is ${req.body.password}.` // req.body.email acceses payload sent from the client, email is type
+    message:`your email is ${req.body.email} and ${req.body.password} and ${req.body.childName} and ${req.body.childDOB} ` // req.body.email acceses payload sent from the client, email is type
   })     // POST request changes file because update was done on the client side, GET will be just to retrieve info
 })
 
